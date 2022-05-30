@@ -84,6 +84,12 @@ export namespace DebugConfiguration {
     }
 }
 
+export interface DebugPluginConfiguration {
+    debugMode?: string;
+    pluginLocation?: string;
+    debugPort?: string;
+}
+
 export interface DebugSessionOptions {
     parentSession?: { id: string };
     consoleMode?: DebugConsoleMode;

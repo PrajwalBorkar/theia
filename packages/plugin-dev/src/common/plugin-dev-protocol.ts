@@ -15,8 +15,7 @@
 // *****************************************************************************
 
 import { JsonRpcServer } from '@theia/core/lib/common/messaging/proxy-factory';
-// eslint-disable-next-line @theia/runtime-import-check
-import { DebugPluginConfiguration } from '@theia/debug/lib/browser/debug-contribution';
+import { DebugPluginConfiguration } from '@theia/debug/lib/common/debug-configuration';
 import { PluginMetadata } from '@theia/plugin-ext/lib/common/plugin-protocol';
 
 export const pluginDevServicePath = '/services/plugin-dev';
