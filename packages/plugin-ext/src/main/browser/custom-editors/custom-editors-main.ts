@@ -39,7 +39,7 @@ import { FileService } from '@theia/filesystem/lib/browser/file-service';
 import { UndoRedoService } from './undo-redo-service';
 import { WebviewsMainImpl } from '../webviews-main';
 import { WidgetManager } from '@theia/core/lib/browser/widget-manager';
-import { ApplicationShell, DefaultUriLabelProviderContribution, Saveable, SaveOptions, WidgetOpenerOptions } from '@theia/core/lib/browser';
+import { ApplicationShell, DefaultUriLabelProviderContribution, Saveable, SaveOptions, WidgetOpenerOptions} from '@theia/core/lib/browser';
 import { WebviewOptions, WebviewPanelOptions, WebviewPanelShowOptions } from '@theia/plugin';
 import { WebviewWidgetIdentifier } from '../webview/webview';
 import { EditorPreferences } from '@theia/editor/lib/browser';
@@ -224,7 +224,7 @@ export class CustomEditorsMainImpl implements CustomEditorsMain, Disposable {
         this.webviewsMain.hookWebview(view);
         view.title.label = title;
         const { enableFindWidget, retainContextWhenHidden, enableScripts, localResourceRoots, ...contentOptions } = options;
-        view.viewColumn = ViewColumn.One; // behaviour might be overridden later using widgetOpenerOptions (if available)
+        view.viewColumn = ViewColumn.One; // behavior might be overridden later using widgetOpenerOptions (if available)
         view.options = { enableFindWidget, retainContextWhenHidden };
         view.setContentOptions({
             allowScripts: enableScripts,
